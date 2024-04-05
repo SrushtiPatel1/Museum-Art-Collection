@@ -1,12 +1,12 @@
 /*********************************************************************************
-*  WEB422 – Assignment 5
+*  WEB422 – Assignment 6
 *
 *  I declare that this assignment is my own work in accordance with Seneca's
 *  Academic Integrity Policy:
 * 
 *  https://www.senecapolytechnic.ca/about/policies/academic-integrity-policy.html
 * 
-*  Name: Srushti Patel Student ID: 117791228  Date: 23/03/2024
+*  Name: Srushti Patel Student ID: 117791228  Date: 05-04-2024
 *
 ********************************************************************************/ 
 

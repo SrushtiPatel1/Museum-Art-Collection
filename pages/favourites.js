@@ -5,6 +5,7 @@ import { favouritesAtom } from '../store';
 import ArtworkCard from '../components/ArtworkCard';
 
 export default function Favourites() {
+
   const [favouritesList] = useAtom(favouritesAtom);
 
   if (!favouritesList) return null; 
@@ -26,13 +27,15 @@ export default function Favourites() {
             <Card>
               <Card.Body>
                 <h4>Nothing Here</h4>
-                Try adding some new artwork to the list.
+               Try Adding Some of Your favourite Art
               </Card.Body>
             </Card>
           </Col>
         )}
       </Row>
+
     </Container>
+
     </>
   );
 }
