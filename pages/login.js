@@ -34,46 +34,45 @@ export default function Login(props) {
     <>
     <br/>
     <br/>
-      <Card >
+      <Card style={{ backgroundColor: '#333', color: '#fff' }}>
         <Card.Body>
-          <h2>Login</h2>Enter your login information below:
-        
-      <br />
-      <Form onSubmit={handleSubmit}>
-        <Form.Group>
-          <Form.Label>User:</Form.Label>
-          <Form.Control
-            type="text"
-            value={user}
-            id="userName"
-            name="userName"
-            onChange={(e) => setUser(e.target.value)}
-          />
-        </Form.Group>
-        <br />
-        <Form.Group>
-          <Form.Label>Password:</Form.Label>
-          <Form.Control
-            type="password"
-            value={password}
-            id="password"
-            name="password"
-            onChange={(e) => setPassword(e.target.value)}
-          />
-        </Form.Group>
-        {warning && (
-          <>
+          <h2>Login</h2>
+          Enter your login information below:
+          <br />
+          <Form onSubmit={handleSubmit}>
+            <Form.Group>
+              <Form.Label>User:</Form.Label>
+              <Form.Control
+                type="text"
+                value={user}
+                id="userName"
+                name="userName"
+                onChange={(e) => setUser(e.target.value)}
+              />
+            </Form.Group>
             <br />
-            <Alert variant="danger">{warning}</Alert>
-          </>
-        )}
-
-        <br />
-        <Button variant="primary" className="pull-right" type="submit">
-          Login
-        </Button>
-      </Form>
-      </Card.Body>
+            <Form.Group>
+              <Form.Label>Password:</Form.Label>
+              <Form.Control
+                type="password"
+                value={password}
+                id="password"
+                name="password"
+                onChange={(e) => setPassword(e.target.value)}
+              />
+            </Form.Group>
+            {warning && (
+              <>
+                <br />
+                <Alert variant="danger">{warning}</Alert>
+              </>
+            )}
+            <br />
+            <Button variant="primary" className="pull-right" type="submit">
+              Login
+            </Button>
+          </Form>
+        </Card.Body>
       </Card>
     </>
   );

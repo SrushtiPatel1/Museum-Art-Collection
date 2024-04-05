@@ -21,7 +21,8 @@ export default function Home() {
       <br />
 
       <Container>
-        <h1>Welcome to Metropolitan Museum of Art</h1>
+      <h1 style={{ color: 'black' }}>Welcome to Metropolitan Museum of Art</h1>
+
         <Row>
           <Col md={6}>
             <Image
