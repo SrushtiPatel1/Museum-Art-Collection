@@ -4,7 +4,7 @@ import { Form, Button, Dropdown } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import { useAtom } from 'jotai';
 import { searchHistoryAtom } from '../store';
-import { addToHistory } from '../lib/userData'; // Import addToHistory function
+import { addToHistory } from '../lib/userData';
 
 export default function AdvancedSearch() {
   const router = useRouter();
@@ -12,7 +12,7 @@ export default function AdvancedSearch() {
   const [searchBy, setSearchBy] = useState('Title');
   const [searchHistory, setSearchHistory] = useAtom(searchHistoryAtom);
 
-  const submitForm = async (data) => { // Modify to be asynchronous
+  const submitForm = async (data) => { 
     let queryString = `searchBy=${searchBy}`;
 
     if (data.geoLocation) {
@@ -26,7 +26,7 @@ export default function AdvancedSearch() {
     queryString += `&isHighlight=${data.isHighlight || false}`;
     queryString += `&q=${data.q}`;
 
-    await addToHistory(queryString); // Use addToHistory function to add to history
+    await addToHistory(queryString); 
     setSearchHistory(current => [...current, queryString]);
     router.push(`/artwork?${queryString}`);
   };

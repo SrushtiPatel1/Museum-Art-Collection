@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useAtom } from 'jotai';
 import { searchHistoryAtom } from '../store';
 import { addToHistory } from '@/lib/userData';
-import { readToken, removeToken } from '@/lib/authenticate'; // Import readToken and removeToken functions
+import { readToken, removeToken } from '@/lib/authenticate'; 
 
 export default function MainNav() {
   const router = useRouter();

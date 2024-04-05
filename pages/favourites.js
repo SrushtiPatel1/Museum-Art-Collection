@@ -7,7 +7,7 @@ import ArtworkCard from '../components/ArtworkCard';
 export default function Favourites() {
   const [favouritesList] = useAtom(favouritesAtom);
 
-  if (!favouritesList) return null; // Add this line to prevent showing "Nothing Here" temporarily while fetching favourites
+  if (!favouritesList) return null; 
 
   return (
     <>

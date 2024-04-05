@@ -3,7 +3,7 @@ import { useAtom } from 'jotai';
 import { Card, ListGroup, Button } from 'react-bootstrap';
 import { searchHistoryAtom } from '../store';
 import styles from '@/styles/History.module.css';
-import { removeFromHistory } from '@/lib/userData'; // Import removeFromHistory function
+import { removeFromHistory } from '@/lib/userData'; 
 
 export default function History() {
   const router = useRouter();
@@ -14,9 +14,9 @@ export default function History() {
     router.push(`/artwork?${searchHistory[index]}`);
   };
 
-  const removeHistoryClicked = async (e, index) => { // Modify to be asynchronous
+  const removeHistoryClicked = async (e, index) => { 
     e.stopPropagation();
-    await removeFromHistory(searchHistory[index]); // Use removeFromHistory function to remove history
+    await removeFromHistory(searchHistory[index]); 
     setSearchHistory(current => {
       let x = [...current];
       x.splice(index, 1);
@@ -24,7 +24,7 @@ export default function History() {
     });
   };
 
-  if (!searchHistory) return null; // Return null if searchHistory is not yet populated
+  if (!searchHistory) return null; 
 
   let parsedHistory = [];
 
