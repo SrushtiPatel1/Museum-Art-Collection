@@ -6,11 +6,9 @@
 * 
 *  https://www.senecapolytechnic.ca/about/policies/academic-integrity-policy.html
 * 
-*  Name: Srushti Patel Student ID: 117791228  Date: 05-04-2024
+*  Name: Srushti Patel Student ID: (117791228)  Date: 05-04-2024
 *
 ********************************************************************************/ 
-
-
 
 import { Container, Row, Col, Image } from 'react-bootstrap';
 
