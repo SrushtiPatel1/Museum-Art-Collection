@@ -39,7 +39,7 @@ export default function MainNav() {
 
   return (
     <>
-      <Navbar className="fixed-top navbar-dark bg-primary justify-content-between" expand="lg" expanded={isExpanded} onToggle={handleToggle}>
+      <Navbar className="fixed-top navbar-dark bg-primary justify-content-between" expand="lg" expanded={isExpanded} onToggle={handleToggle} color='black'>
         <Link href="/" passHref legacyBehavior>
           <Navbar.Brand style={{ marginLeft: '5px', fontSize: '24px', fontFamily: 'cursive' }}>Srushti Artworks Explorer</Navbar.Brand>
         </Link>

@@ -7,9 +7,15 @@ export default function Layout(props){
     return(
         <>
         <MainNav />
-        <Container>
-            {props.children}
-        </Container>
-         </>
+        <div style={{ 
+            backgroundImage: 'url("https://www.adirectory.us/pix/art-museums-400.jpg")', 
+            backgroundSize: 'cover', 
+            minHeight: '100vh',
+            }}>
+            <Container>
+                {props.children}
+            </Container>
+        </div>
+        </>
     )
 }

@@ -12,7 +12,7 @@
 
 
 
-import { Row, Col, Image } from 'react-bootstrap';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 
 export default function Home() {
   return (
@@ -20,7 +20,7 @@ export default function Home() {
       <br />
       <br />
 
-      <div className="container">
+      <Container>
         <h1>Welcome to Metropolitan Museum of Art</h1>
         <Row>
           <Col md={6}>
@@ -32,23 +32,24 @@ export default function Home() {
             />
           </Col>
           <Col md={6}>
-            <p>
-              The Metropolitan Museum of Art of New York City, colloquially &quot;the Met&quot;, is the largest art museum in the United States. With 6,479,548 visitors to its three locations in 2019, it was the fourth most visited art museum in the world. Its permanent collection contains over two million works, divided among seventeen curatorial departments. The main building at 1000 Fifth Avenue, along the Museum Mile on the eastern edge of Central Park in Manhattan Upper East Side, is by area one of the world largest art galleries.
-            </p>
-            <p>
-              <a
-                href="https://en.wikipedia.org/wiki/Metropolitan_Museum_of_Art"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Learn more about Metropolitan Museum of Art on Wikipedia
-              </a>
-            </p>
+            <div style={{ color: 'black', fontWeight: 'bold', backgroundColor: 'rgba(255, 255, 255, 0.5)', padding: '10px', borderRadius: '5px' }}>
+              <p>
+                The Metropolitan Museum of Art of New York City, colloquially &quot;the Met&quot;, is the largest art museum in the United States. With 6,479,548 visitors to its three locations in 2019, it was the fourth most visited art museum in the world. Its permanent collection contains over two million works, divided among seventeen curatorial departments. The main building at 1000 Fifth Avenue, along the Museum Mile on the eastern edge of Central Park in Manhattan Upper East Side, is by area one of the world largest art galleries.
+              </p>
+              <p>
+                <a
+                  href="https://en.wikipedia.org/wiki/Metropolitan_Museum_of_Art"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ color: 'black', fontWeight: 'bold' }}
+                >
+                  Learn more about Metropolitan Museum of Art on Wikipedia
+                </a>
+              </p>
+            </div>
           </Col>
         </Row>
-      </div>
+      </Container>
     </>
   );
 }
-
-
